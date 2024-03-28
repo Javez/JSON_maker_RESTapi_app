@@ -2,7 +2,7 @@
 
 Node version: v18.16.0\
 Runs the app in the development mode.\
-Open Postman [http://localhost:8080](http://localhost:8080) to make backend requests in local development.
+Open Postman [http://localhost:3000](http://localhost:3000) to make backend requests in local development.
 
 ## Project setup
 
@@ -27,32 +27,28 @@ In root directory, run next command to start app:
 
 ## Basic Postman requests to running app
 
-[GET get-one-file]
-[URL] `http://localhost:3000/filename1`\
+[GET get-one-file]\
+[URL] `http://localhost:3000/filename1`
 
-[GET get-files]
+[GET get-files]\
+[URL] `http://localhost:3000/`
+
+[POST add-file-with-data]\
 [URL] `http://localhost:3000/`\
+[BODY raw (json)] { "filename": "newfile3", "data": { "1": "1241" } }
 
-[POST add-file-with-data]
-[URL] `http://localhost:3000/`\
-[BODY raw (json)] { "filename": "newfile3", "data": { "1": "1241" } }\
-
-[PUT update-file-with-new-data]
+[PUT update-file-with-new-data]\
 [URL] `http://localhost:3000/filename1`\
-[BODY raw (json)] { "data": { "Check": "checkvalue" } }\
+[BODY raw (json)] { "data": { "Check": "checkvalue" } }
 
-[DELETE update-file-with-new-data]
-[URL] `http://localhost:3000/filename1`\
-
-## Docker container
-
-**Under development**
+[DELETE update-file-with-new-data]\
+[URL] `http://localhost:3000/filename1`
 
 ## Screenshots
+![зображення](https://github.com/Javez/JSON_maker_RESTapi_app/assets/66317972/47600e19-25f0-4c0e-811b-54003e15e65e)
 
-"Postman example"
+## Link of Postman collection
+[open](https://crimson-desert-437459.postman.co/workspace/Team-Workspace~0e0b9352-6290-4318-842d-907c7cceafef/collection/23640783-1cfe1d08-2180-4fc4-82ca-1069a9d19dcf?action=share&creator=23640783)
 
 
 If you aren't satisfied im very sad :d
-
-This app can be uploaded at [Heroku](https://www.heroku.com) with docker.
